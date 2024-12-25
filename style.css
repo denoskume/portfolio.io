@@ -142,6 +142,7 @@ ul li {
     bottom: 0;
     width: 100%;
     background-color: black;
+    color: white;
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: space-around;
