@@ -1,7 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 0px;
     padding: 0;
+    background: white;
+    color: #333;
+    overflow: hidden; /* Prevent scrolling during loading screen */
+    font-size: 22px; /* Increase font size */
+    overflow-x: hidden;  
 }
 
 .container {
