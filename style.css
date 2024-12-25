@@ -253,6 +253,7 @@ nav ul li a:hover {
 @media screen and (min-width: 769px) {
     #banner,
     #profile-area,
+    #header
     nav {
         display: block;
     }
@@ -269,7 +270,14 @@ nav ul li a:hover {
         display: block;
         padding: 5px;
     }
-    
+    #banner img {
+        height: auto;
+    }
+    #profile-area {
+        display: block;
+        top: 5px;
+        left: 5px;
+    }
     nav {
         display: none;
     }
@@ -283,6 +291,7 @@ nav ul li a:hover {
         display: flex;
     }
 }
+
 
 /* Hide top and bottom menus on scroll */
 .hide {
