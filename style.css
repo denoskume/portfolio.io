@@ -158,19 +158,19 @@ ul li {
 
 /* For larger screens */
 @media screen and (min-width: 769px) {
-    nav {
-        display: block;
+    .navbar, .navbar-collapse {
+        display: flex !important;
     }
     .profile-photo,
     .top-icons,
     .bottom-nav {
-        display: none;
+        display: none !important;
     }
 }
 
 /* For smaller screens */
 @media screen and (max-width: 768px) {
-    nav {
+    .navbar, .navbar-collapse {
         display: none;
     }
     .profile-photo {
