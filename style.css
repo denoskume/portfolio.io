@@ -155,6 +155,14 @@ ul li {
     text-decoration: none;
 }
 
+.search-box {
+    flex-grow: 1;
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 /* Bottom Navigation */
 .bottom-nav {
     display: none;
