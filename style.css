@@ -142,7 +142,7 @@ ul li {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: black;
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: space-around;
@@ -152,7 +152,7 @@ ul li {
 
 .bottom-nav a {
     color: #333;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
 }
 
