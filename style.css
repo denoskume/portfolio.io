@@ -112,7 +112,7 @@ ul li {
     /*bottom: 50px; /* Adjust based on your design */
    /* right: 5px; /* Adjust based on your design */
     border-radius: 30%;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: 88px;
     z-index: 1001; /* Ensure badge stays on top */
 }
