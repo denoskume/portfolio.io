@@ -84,10 +84,22 @@ ul li {
 
 /* Profile Photo Area */
 #profile-area {
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 20px; 
+    left: 20px; 
+}
+
+#profile-area .profile-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50px; 
+    z-index: 1000; /* Ensure photo stays on top */
 }
 
 #profile-area img {
