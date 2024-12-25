@@ -65,9 +65,10 @@ ul li {
 
 /* Banner */
 #banner {
-    display: none;
     position: relative;
     text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the transparency of the banner */
+    padding: 10px;
 }
 
 #banner img {
@@ -75,8 +76,8 @@ ul li {
     height: auto;
 }
 
+/* Profile Photo Area */
 #profile-area {
-    display: none;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -203,6 +204,18 @@ ul li {
 
 /* For smaller screens */
 @media screen and (max-width: 768px) {
+    #banner {
+        display: block;
+        padding: 5px;
+    }
+    #banner img {
+        height: auto;
+    }
+    #profile-area {
+        display: block;
+        top: 5px;
+        left: 5px;
+    }
     nav {
         display: none;
     }
