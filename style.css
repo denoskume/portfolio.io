@@ -1,12 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin-top: 100px;
-    margin-bottom: 0px;
+    margin: 0;
     padding: 0;
-    background: white;
-    color: #333;
-    font-size: 22px; /* Increase font size */
-    
 }
 
 .container {
@@ -70,90 +65,34 @@ ul li {
 
 /* Banner */
 #banner {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    z-index: 999;
+    position: relative;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the transparency of the banner */
+    padding: 10px;
 }
 
 #banner img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
 /* Profile Photo Area */
 #profile-area {
-    position: relative;
-    display: flex;
-    align-items: center;
-    top: 20px; /* Adjust based on your design */
-    left: 20px; /* Align left */
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 #profile-area img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 50px; 
-    z-index: 1000; /* Ensure photo stays on top */    
 }
 
 #certified-badge {
-    position: fixed;
-    width: 35px;
-    height: 25px;
-    /*bottom: 50px; /* Adjust based on your design */
-   /* right: 5px; /* Adjust based on your design */
-    border-radius: 30%;
-    margin-top: 60px;
-    margin-left: 88px;
-    z-index: 1001; /* Ensure badge stays on top */
-}
-
-
-/* Fixed Header */
-header {
-    position: fixed; /* Position over the banner */
-    top: 50px; /* Adjust to align with the bottom of the banner */
-    left: 0;
-    width: 100%;
-    background: transparent; /* Ensure it's transparent to display over the banner */
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 1002; /* Higher z-index to stay on top of the banner */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: right;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: none;
-    color: gold;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 
 /* Profile Photo for Mobile View */
@@ -253,7 +192,6 @@ nav ul li a:hover {
 @media screen and (min-width: 769px) {
     #banner,
     #profile-area,
-    #header
     nav {
         display: block;
     }
@@ -291,7 +229,6 @@ nav ul li a:hover {
         display: flex;
     }
 }
-
 
 /* Hide top and bottom menus on scroll */
 .hide {
