@@ -122,9 +122,9 @@ ul li {
 .top-navigation {
     display: none;
     position: fixed;
-    top: 10px;
-    left: 10px;
-    right: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,7 +140,7 @@ ul li {
 
 .top-navigation .top-icons {
     display: flex;
-    gap: 10px;
+    gap: 15px; /* Adjust gap for even spacing */
 }
 
 .top-navigation .top-icons a {
@@ -241,4 +241,3 @@ ul li {
 .hide {
     display: none !important;
 }
-
