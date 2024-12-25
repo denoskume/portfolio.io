@@ -1,1 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 0;
+    background: white;
+    color: #333;
+    font-size: 22px; /* Increase font size */
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: none; /* Hide by default */
+}
+
+nav .navbar-nav {
+    margin-left: auto;
+}
+
+nav .navbar-nav .nav-link {
+    padding: 10px;
+}
+
+nav .navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Banner */
+#banner-large {
+    display: none;
+    position: relative;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the transparency of the banner */
+    padding: 10px;
+}
+
+#banner-large img {
+    width: 100%;
+    height: auto;
+}
+
+/* Profile Photo Area */
+#profile-area {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#profile-area img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50px;
+    z-index: 1000; /* Ensure photo stays on top */
+}
+
+#certified-badge {
+    position: fixed;
+    width: 35px;
+    height: 25px;
+    border-radius: 30%;
+    margin-top: 80px;
+    margin-left: 88px;
+    z-index: 1001; /* Ensure badge stays on top */
+}
+
+/* Profile Photo for Mobile View */
+.profile-photo {
+    display: none;
+}
+
+.profile-photo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Top Navigation */
+.top-navigation {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.top-navigation .profile-photo {
+    position: static;
+}
+
+.top-navigation .top-icons {
+    display: flex;
+    gap: 15px; /* Adjust gap for even spacing */
+}
+
+.top-navigation .top-icons a {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.search-box {
+    flex-grow: 1;
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 2;
+}
+
+.bottom-nav a {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+/* For larger screens */
+@media screen and (min-width: 769px) {
+    #banner-large,
+    #profile-area {
+        display: block;
+    }
+    nav {
+        display: block; /* Show navigation on larger screens */
+        position: relative; /* Position relative to place it below the banner */
+        top: 10px; /* Adjust as needed */
+    }
+    .top-navigation,
+    .bottom-nav,
+    .top-navigation .profile-photo,
+    .top-navigation .top-icons {
+        display: none; /* Hide on larger screens */
+    }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        display: none; /* Hide navigation on mobile */
+    }
+    .top-navigation {
+        display: flex; /* Show top navigation on mobile */
+    }
+    .bottom-nav {
+        display: flex; /* Show bottom navigation on mobile */
+    }
+    .profile-photo {
+        display: flex; /* Show profile photo on mobile */
+    }
+    .top-navigation .top-icons {
+        display: flex; /* Show top icons on mobile */
+    }
+}
+
+/* Hide top and bottom menus on scroll */
+.hide {
+    display: none !important;
+}
 
