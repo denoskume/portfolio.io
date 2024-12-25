@@ -84,11 +84,10 @@ ul li {
 
 /* Profile Photo Area */
 #profile-area {
-    position: relative;
-    display: flex;
-    align-items: center;
-    top: 20px; 
-    left: 20px; 
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 #profile-area img {
@@ -96,21 +95,16 @@ ul li {
 }
 
 #certified-badge {
-    position: fixed;
-    width: 35px;
-    height: 25px;
-    border-radius: 30%;
-    margin-top: 80px;
-    margin-left: 88px;
-    z-index: 1001; /* Ensure badge stays on top */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
 
 /* Profile Photo for Mobile View */
 .profile-photo {
     display: none;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 2;
 }
 
 .profile-photo img {
