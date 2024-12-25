@@ -107,12 +107,13 @@ ul li {
 }
 
 #certified-badge {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
+    position: fixed;
+    width: 35px;
+    height: 25px;
+    border-radius: 30%;
+    margin-top: 80px;
+    margin-left: 88px;
+    z-index: 1001; /* Ensure badge stays on top */
 
 /* Profile Photo for Mobile View */
 .profile-photo {
