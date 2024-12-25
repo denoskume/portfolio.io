@@ -227,10 +227,11 @@ ul li {
         position: relative; /* Position relative to place it below the banner */
         top: 10px; /* Adjust as needed */
     }
-    .profile-photo,
     .top-navigation,
-    .bottom-nav {
-        display: none;
+    .bottom-nav,
+    .top-navigation .profile-photo,
+    .top-navigation .top-icons {
+        display: none; /* Hide on larger screens */
     }
 }
 
@@ -240,10 +241,16 @@ ul li {
         display: none; /* Hide navigation on mobile */
     }
     .top-navigation {
-        display: flex;
+        display: flex; /* Show top navigation on mobile */
     }
     .bottom-nav {
-        display: flex;
+        display: flex; /* Show bottom navigation on mobile */
+    }
+    .profile-photo {
+        display: flex; /* Show profile photo on mobile */
+    }
+    .top-navigation .top-icons {
+        display: flex; /* Show top icons on mobile */
     }
 }
 
