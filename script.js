@@ -31,4 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         lastScrollTop = scrollTop;
     });
+
+    // Load header and footer
+    $("#header-placeholder").load("header.html");
+    $("#footer-placeholder").load("footer.html");
 });
