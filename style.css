@@ -105,6 +105,10 @@ ul li {
 /* Profile Photo for Mobile View */
 .profile-photo {
     display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
 }
 
 .profile-photo img {
