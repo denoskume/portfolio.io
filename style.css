@@ -223,7 +223,7 @@ ul li {
         display: none;
     }
     .profile-photo {
-        display: none;
+        display: block;
     }
     .top-icons {
         display: flex;
