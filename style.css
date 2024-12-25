@@ -15,8 +15,23 @@ body {
     text-align: center;
 }
 
+nav {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav .navbar-nav {
+    margin-left: auto;
+}
+
 nav .navbar-nav .nav-link {
     padding: 10px;
+}
+
+nav .navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
 }
 
 .section {
