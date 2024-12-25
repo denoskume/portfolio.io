@@ -79,6 +79,43 @@ ul li {
     cursor: pointer;
 }
 
+/* Top Icons */
+.top-icons {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.top-icons a {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 2;
+}
+
+.bottom-nav a {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 /* Sidebar Navigation */
 .sidebar {
     height: 100%;
@@ -121,19 +158,18 @@ ul li {
 
 /* For smaller screens */
 @media screen and (max-width: 768px) {
-    nav {
-        display: none;
-    }
     .profile-photo {
         display: block;
     }
-    .header {
-        padding: 10px;
+    .top-icons {
+        display: flex;
     }
-    .section {
-        padding: 10px;
+    .bottom-nav {
+        display: flex;
     }
-    .container {
-        padding: 10px;
-    }
+}
+
+/* Hide top and bottom menus on scroll */
+.hide {
+    display: none !important;
 }
