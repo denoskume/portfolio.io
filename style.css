@@ -24,6 +24,7 @@ nav {
     background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
     padding: 10px;
     border-bottom: 1px solid #ccc;
+    display: none; /* Hide by default */
 }
 
 nav .navbar-nav {
@@ -97,7 +98,7 @@ ul li {
     border: 3px solid #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 50px; 
+    top: 50px;
     z-index: 1000; /* Ensure photo stays on top */
 }
 
@@ -218,9 +219,13 @@ ul li {
 /* For larger screens */
 @media screen and (min-width: 769px) {
     #banner-large,
-    #profile-area,
-    nav {
+    #profile-area {
         display: block;
+    }
+    nav {
+        display: block; /* Show navigation on larger screens */
+        position: relative; /* Position relative to place it below the banner */
+        top: 10px; /* Adjust as needed */
     }
     .profile-photo,
     .top-navigation,
@@ -232,7 +237,7 @@ ul li {
 /* For smaller screens */
 @media screen and (max-width: 768px) {
     nav {
-        display: none;
+        display: none; /* Hide navigation on mobile */
     }
     .top-navigation {
         display: flex;
