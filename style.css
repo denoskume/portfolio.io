@@ -20,7 +20,7 @@ body {
     padding: 20px;
     text-align: center;
     background: transparent;
-    z-index: 1002; 
+    
     
 }
 
@@ -30,6 +30,7 @@ nav {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
+    z-index: 1002; 
 }
 
 nav .navbar-nav {
