@@ -199,6 +199,10 @@ ul li {
     padding-top: 0;
 }
 
+.sidebar section { 
+    padding: 5px 0; /* Adjust padding to remove horizontal padding */
+    border-bottom: 1px solid #444; /* Divider line */
+
 .sidebar .side-nav-logo {
     text-align: center;
     margin-bottom: 20px;
