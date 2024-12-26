@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin-top: 0;
+    margin-top: 80px;
     margin-bottom: 0;
     padding: 0;
     background: white;
@@ -21,7 +21,6 @@ body {
 }
 
 nav {
-    top: 50 px;
     background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
     padding: 10px;
     border-bottom: 1px solid #ccc;
@@ -199,10 +198,6 @@ ul li {
     padding-top: 0;
 }
 
-.sidebar section { 
-    padding: 5px 0; /* Adjust padding to remove horizontal padding */
-    border-bottom: 1px solid #444; /* Divider line */
-
 .sidebar .side-nav-logo {
     text-align: center;
     margin-bottom: 20px;
@@ -241,7 +236,7 @@ ul li {
 
 .sidebar .side-nav-headline p {
     color: #818181;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .sidebar .company-info {
@@ -275,6 +270,10 @@ ul li {
     color: #f1f1f1;
 }
 
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
 
 /* For larger screens */
 @media screen and (min-width: 769px) {
