@@ -28,6 +28,9 @@ nav {
     /*border-bottom: 1px solid #ccc;*/
     display: none; /* Hide by default */
     z-index: 1002;
+    position: fixed; /* Make navigation fixed */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
 }
 
 nav .navbar-nav {
@@ -296,8 +299,8 @@ ul li {
     }
     nav {
         display: block; /* Show navigation on larger screens */
-        position: fixed; /* Position relative to place it below the banner */
-        top: 50px; /* Adjust as needed */
+        position: fixed; /* Make navigation fixed */
+        top: 0; /* Stick to the top */
     }
     .top-navigation,
     .bottom-nav,
