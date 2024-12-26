@@ -24,7 +24,7 @@ nav {
     background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    display: block; /* Show by default on larger screens */
+    display: block; /* Show by default */
 }
 
 nav .navbar-nav {
@@ -71,7 +71,7 @@ ul li {
 
 /* Banner */
 #banner-large {
-    display: block; /* Show by default on larger screens */
+    display: block; /* Show banner */
     position: relative;
     text-align: center;
     background: rgba(0, 0, 0, 0.5); /* Adjust the transparency of the banner */
@@ -85,7 +85,7 @@ ul li {
 
 /* Profile Photo Area */
 #profile-area {
-    display: block; /* Show by default on larger screens */
+    display: block;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -110,92 +110,6 @@ ul li {
     margin-top: 80px;
     margin-left: 88px;
     z-index: 1001; /* Ensure badge stays on top */
-}
-
-/* Sidebar Navigation */
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: absolute;
-    z-index: 3; /* Ensure it appears above other content */
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 0;
-}
-
-.sidebar .side-nav-logo {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.sidebar .side-nav-logo img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.sidebar .side-nav-logo p {
-    color: #818181;
-    font-size: 18px;
-    margin-top: 2px;
-}
-
-.sidebar .side-nav-photo {
-    text-align: left;
-    margin-bottom: 3px;
-}
-
-.sidebar .side-nav-photo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar .side-nav-headline h3 {
-    color: #fff;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.sidebar .side-nav-headline p {
-    color: #818181;
-    font-size: 14px;
-}
-
-.sidebar .company-info {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    margin-top: 10px;
-}
-
-.sidebar .company-info img {
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
-}
-
-.sidebar .company-info p {
-    color: #818181;
-    font-size: 14px;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
 }
 
 #main {
