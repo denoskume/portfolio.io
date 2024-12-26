@@ -267,3 +267,7 @@ ul li {
     display: none !important;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
