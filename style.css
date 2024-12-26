@@ -24,7 +24,7 @@ nav {
     top: 50 px;
     background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
     padding: 10px;
-    /*border-bottom: 1px solid #ccc;*/
+    border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
 }
 
@@ -192,7 +192,7 @@ ul li {
     position: absolute; /* Use absolute positioning */
     z-index: 3; /* Ensure it appears above other content */
     top: 0;
-    left: 5px;
+    left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -275,10 +275,6 @@ ul li {
     color: #f1f1f1;
 }
 
-#main {
-    transition: margin-left 0.5s;
-    padding: 16px;
-}
 
 /* For larger screens */
 @media screen and (min-width: 769px) {
