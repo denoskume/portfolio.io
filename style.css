@@ -186,10 +186,10 @@ ul li {
 
 /* Sidebar Navigation */
 .sidebar {
-    height: 100%;
+    height: 50%; /* Set to half of vertical screen */
     width: 0;
-    position: fixed;
-    z-index: 3;
+    position: absolute; /* Use absolute positioning */
+    z-index: 3; /* Ensure it appears above other content */
     top: 0;
     left: 0;
     background-color: #111;
@@ -219,10 +219,6 @@ ul li {
     margin-left: 50px;
 }
 
-#main {
-    transition: margin-left 0.5s;
-    padding: 16px;
-}
 
 /* For larger screens */
 @media screen and (min-width: 769px) {
