@@ -16,17 +16,28 @@ body {
 }
 
 .header {
-    top: 120px;
+   /* top: 120px;
     padding: 20px;
     text-align: center;
-    z-index: 1000;
+    z-index: 1000; */
+
+    position: fixed; /* Position over the banner */
+    top: 50px; /* Adjust to align with the bottom of the banner */
+    left: 0;
+    width: 100%;
+    background: transparent; /* Ensure it's transparent to display over the banner */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1002; /* Higher z-index to stay on top of the banner */
 }
 
 nav {
     background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    /*border-bottom: 1px solid #ccc;*/
     display: none; /* Hide by default */
+    z-index: 1002;
 }
 
 nav .navbar-nav {
@@ -73,13 +84,13 @@ ul li {
 
 /* Banner */
 #banner-large {
+    position: fixed;
     top: 0;
-    display: none;
-    position: relative;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 10px; 
-    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    z-index: 999;
     
 }
 
