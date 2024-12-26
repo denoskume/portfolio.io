@@ -16,8 +16,10 @@ body {
 }
 
 .header {
+    top: 120px;
     padding: 20px;
     text-align: center;
+    z-index: 1000;
 }
 
 nav {
@@ -77,6 +79,7 @@ ul li {
     text-align: center;
     background: rgba(0, 0, 0, 0.5); 
     padding: 10px; 
+    z-index: 1000;
     
 }
 
