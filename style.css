@@ -16,8 +16,18 @@ body {
 }
 
 .header {
-    padding: 20px;
+   /* padding: 20px;
+    text-align: center; */
+
+    position: fixed; /* Position over the banner */
+    top: 50px; /* Adjust to align with the bottom of the banner */
+    left: 0;
+    width: 100%;
+    background: transparent; /* Ensure it's transparent to display over the banner */
+    color: white;
+    padding: 10px 0;
     text-align: center;
+    z-index: 1002; /* Higher z-index to stay on top of the banner */
 }
 
 nav {
@@ -87,16 +97,26 @@ ul li {
 }
 
 #banner-large img {
+    /*width: 100%;
+    height: auto;*/
+    
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Profile Photo Area */
 #profile-area {
-    display: none;
+   /* display: none;
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 20px; */
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 20px; /* Adjust based on your design */
+    left: 20px; /* Align left */
 }
 
 #profile-area img {
@@ -108,6 +128,7 @@ ul li {
     position: fixed;
     top: 50px;
     z-index: 1000; /* Ensure photo stays on top */
+
 }
 
 #certified-badge {
