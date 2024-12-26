@@ -204,25 +204,25 @@ ul li {
 }
 
 .sidebar .side-nav-logo img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
 .sidebar .side-nav-logo p {
     color: #818181;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 .sidebar .side-nav-photo {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
+    margin-bottom: 3px;
 }
 
 .sidebar .side-nav-photo img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -241,15 +241,15 @@ ul li {
 
 .sidebar .company-info {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     margin-top: 10px;
 }
 
 .sidebar .company-info img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
 }
 
 .sidebar .company-info p {
