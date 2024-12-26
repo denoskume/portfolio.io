@@ -198,6 +198,9 @@ ul li {
     transition: 0.5s;
     padding-top: 60px;
 }
+.sidebar section { 
+    padding: 20px; 
+    border-bottom: 1px solid #444; /* Divider line */
 
 .sidebar .side-nav-logo {
     text-align: center;
@@ -250,9 +253,9 @@ ul li {
 }
 
 .sidebar .company-info img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
 }
 
 .sidebar .company-info p {
