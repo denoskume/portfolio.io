@@ -16,18 +16,15 @@ body {
 }
 
 .header {
-    top: 120px;
     padding: 20px;
     text-align: center;
-    z-index: 1000; 
 }
 
 nav {
     background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
     padding: 10px;
-    /*border-bottom: 1px solid #ccc;*/
+    border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
-    z-index: 1002;
 }
 
 nav .navbar-nav {
@@ -74,20 +71,16 @@ ul li {
 
 /* Banner */
 #banner-large {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    z-index: 999;
-    
+    display: none;
+    position: relative;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the transparency of the banner */
+    padding: 10px;
 }
 
 #banner-large img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: auto;
 }
 
 /* Profile Photo Area */
@@ -95,7 +88,7 @@ ul li {
     display: none;
     position: absolute;
     top: 20px;
-    left: 20px; 
+    left: 20px;
 }
 
 #profile-area img {
@@ -107,7 +100,6 @@ ul li {
     position: fixed;
     top: 50px;
     z-index: 1000; /* Ensure photo stays on top */
-
 }
 
 #certified-badge {
@@ -203,82 +195,11 @@ ul li {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 5px;
-}
-
-.sidebar section {
-    padding: 20px 0; /* Adjust padding to remove horizontal padding */
-    border-bottom: 1px solid #444; /* Divider line */
-}
-
-.sidebar .side-nav-logo {
-    text-align: left; /* Align content to the left */
-    margin-bottom: 20px;
-    padding-left: 20px; /* Add padding on the left */
-}
-
-.sidebar .side-nav-logo img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-left: 0; /* Remove left margin */
-}
-
-.sidebar .side-nav-logo p {
-    color: #818181;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-left: 0; /* Remove left margin */
-}
-
-.sidebar .side-nav-photo {
-    text-align: left; /* Align content to the left */
-    margin-bottom: 20px;
-    padding-left: 20px; /* Add padding on the left */
-}
-
-.sidebar .side-nav-photo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar .side-nav-headline h3 {
-    color: #fff;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 0; /* Remove left margin */
-}
-
-.sidebar .side-nav-headline p {
-    color: #818181;
-    font-size: 14px;
-    margin-left: 0; /* Remove left margin */
-}
-
-.sidebar .company-info {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    padding-left: 20px; /* Add padding on the left */
-}
-
-.sidebar .company-info img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.sidebar .company-info p {
-    color: #818181;
-    font-size: 14px;
-    margin-left: 0; /* Remove left margin */
+    padding-top: 60px;
 }
 
 .sidebar a {
-    padding: 8px 32px 8px 20px; /* Adjust padding to align to the left */
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -290,7 +211,15 @@ ul li {
     color: #f1f1f1;
 }
 
-    
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
 /* For larger screens */
 @media screen and (min-width: 769px) {
     #banner-large,
@@ -299,8 +228,8 @@ ul li {
     }
     nav {
         display: block; /* Show navigation on larger screens */
-        position: fixed; /* Position relative to place it below the banner */
-        top: 50px; /* Adjust as needed */
+        position: relative; /* Position relative to place it below the banner */
+        top: 10px; /* Adjust as needed */
     }
     .top-navigation,
     .bottom-nav,
@@ -336,4 +265,8 @@ ul li {
 /* Hide top and bottom menus on scroll */
 .hide {
     display: none !important;
+}
+
+body.no-scroll {
+    overflow: hidden;
 }
