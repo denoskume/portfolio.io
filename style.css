@@ -26,7 +26,8 @@ body {
 
 nav {
     margin-top: -110px;
-    background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
+    /*background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
+    background: transparent;
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
