@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 0;
+    background: white;
+    color: #333;
+    font-size: 22px; /* Increase font size */
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: block; /* Show by default on larger screens */
+}
+
+nav .navbar-nav {
+    margin-left: auto;
+}
+
+nav .navbar-nav .nav-link {
+    padding: 10px;
+}
+
+nav .navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Banner */
+#banner-large {
+    display: block; /* Show by default on larger screens */
+    position: relative;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the transparency of the banner */
+    padding: 10px;
+}
+
+#banner-large img {
+    width: 100%;
+    height: auto;
+}
+
+/* Profile Photo Area */
+#profile-area {
+    display: block; /* Show by default on larger screens */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#profile-area img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50px;
+    z-index: 1000; /* Ensure photo stays on top */
+}
+
+#certified-badge {
+    position: fixed;
+    width: 35px;
+    height: 25px;
+    border-radius: 30%;
+    margin-top: 80px;
+    margin-left: 88px;
+    z-index: 1001; /* Ensure badge stays on top */
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 3; /* Ensure it appears above other content */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0;
+}
+
+.sidebar .side-nav-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .side-nav-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar .side-nav-logo p {
+    color: #818181;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.sidebar .side-nav-photo {
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+.sidebar .side-nav-photo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .side-nav-headline h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.sidebar .side-nav-headline p {
+    color: #818181;
+    font-size: 14px;
+}
+
+.sidebar .company-info {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.sidebar .company-info img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.sidebar .company-info p {
+    color: #818181;
+    font-size: 14px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
