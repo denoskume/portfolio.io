@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let lastScrollTop = 0;
 
     profilePhoto.addEventListener('click', function() {
-        sidebar.style.width = '70%';
+        sidebar.style.width = '50%';
     });
 
     sidebar.addEventListener('click', function(event) {
