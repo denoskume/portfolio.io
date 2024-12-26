@@ -186,7 +186,7 @@ ul li {
 
 /* Sidebar Navigation */
 .sidebar {
-    height: 50%; /* Set to half of vertical screen */
+    height: 100%; /* Set to half of vertical screen */
     width: 0;
     position: absolute; /* Use absolute positioning */
     z-index: 3; /* Ensure it appears above other content */
@@ -195,7 +195,7 @@ ul li {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 0;
 }
 
 .sidebar .side-nav-logo {
