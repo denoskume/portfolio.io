@@ -297,7 +297,7 @@ ul li {
     nav {
         display: block; /* Show navigation on larger screens */
         position: relative; /* Position relative to place it below the banner */
-        top: 10px; /* Adjust as needed */
+        top: 60px; /* Adjust as needed */
     }
     .top-navigation,
     .bottom-nav,
