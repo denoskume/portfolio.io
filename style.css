@@ -26,8 +26,8 @@ body {
 
 nav {
     margin-top: -110px;
-    /*background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
-    background: transparent;
+    background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
+   
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
@@ -81,7 +81,7 @@ ul li {
     display: none;
     position: relative;
     text-align: center;
-    
+    background: transparent;
     width: 100%;
     height: 120px;
     overflow: hidden;
