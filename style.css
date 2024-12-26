@@ -194,7 +194,6 @@ ul li {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    overflow-y: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
