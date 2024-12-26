@@ -200,7 +200,7 @@ ul li {
 }
 .sidebar section { 
     padding: 20px; 
-    border-bottom: 1px solid #444; /* Divider line */
+    border-bottom: 1px solid white; /* Divider line */
 
 .sidebar .side-nav-logo {
     text-align: center;
