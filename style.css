@@ -28,9 +28,6 @@ nav {
     /*border-bottom: 1px solid #ccc;*/
     display: none; /* Hide by default */
     z-index: 1002;
-    position: fixed; /* Make navigation fixed */
-    width: 100%; /* Full width */
-    top: 100px; /* Stick right below the banner */
 }
 
 nav .navbar-nav {
@@ -82,8 +79,9 @@ ul li {
     width: 100%;
     height: 100px;
     overflow: hidden;
-    background: rgba(106, 17, 203, 0.5); /* Transparent gradient background */
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     z-index: 999;
+    
 }
 
 #banner-large img {
@@ -109,6 +107,7 @@ ul li {
     position: fixed;
     top: 50px;
     z-index: 1000; /* Ensure photo stays on top */
+
 }
 
 #certified-badge {
@@ -291,6 +290,7 @@ ul li {
     color: #f1f1f1;
 }
 
+    
 /* For larger screens */
 @media screen and (min-width: 769px) {
     #banner-large,
@@ -299,8 +299,8 @@ ul li {
     }
     nav {
         display: block; /* Show navigation on larger screens */
-        position: fixed; /* Make navigation fixed */
-        top: 100px; /* Stick right below the banner */
+        position: fixed; /* Position relative to place it below the banner */
+        top: 50px; /* Adjust as needed */
     }
     .top-navigation,
     .bottom-nav,
