@@ -20,11 +20,12 @@ body {
     padding: 20px;
     text-align: center;
     background: transparent;
-    z-index: 1000; 
+    z-index: 1002; 
     
 }
 
 nav {
+    margin-top: 60px;
     background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
     padding: 10px;
     border-bottom: 1px solid #ccc;
