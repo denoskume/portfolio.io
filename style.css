@@ -186,7 +186,7 @@ ul li {
 
 /* Sidebar Navigation */
 .sidebar {
-    height: 50%; /* Set to half of vertical screen */
+    height: 100%; /* Set to half of vertical screen */
     width: 0;
     position: absolute; /* Use absolute positioning */
     z-index: 3; /* Ensure it appears above other content */
@@ -194,6 +194,7 @@ ul li {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
+    overflow-y: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
@@ -210,8 +211,8 @@ ul li {
 }
 
 .sidebar .side-nav-logo img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-left: 0; /* Remove left margin */
 }
@@ -230,8 +231,8 @@ ul li {
 }
 
 .sidebar .side-nav-photo img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -258,8 +259,8 @@ ul li {
 }
 
 .sidebar .company-info img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 
