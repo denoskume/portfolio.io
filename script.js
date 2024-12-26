@@ -10,13 +10,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     profilePhoto.addEventListener('click', function() {
         sidebar.style.width = '70%';
-        main.style.marginLeft = '70%';
     });
 
-    window.closeNav = function() {
-        sidebar.style.width = '0';
-        main.style.marginLeft = '0';
-    };
+    sidebar.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!sidebar.contains(event.target) && !profilePhoto.contains(event.target)) {
+            sidebar.style.width = '0';
+        }
+    });
 
     window.addEventListener('scroll', function() {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
