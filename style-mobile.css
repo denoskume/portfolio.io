@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 0;
+    background: white;
+    color: #333;
+    font-size: 22px; /* Increase font size */
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: none; /* Hide navigation on mobile */
+}
+
+.top-navigation {
+    display: flex; /* Show top navigation on mobile */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-bottom: 1px solid
