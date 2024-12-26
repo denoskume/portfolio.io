@@ -282,12 +282,6 @@ ul li {
     color: #f1f1f1;
 }
 
-#main {
-    transition: margin-left 0.5s;
-    padding: 16px;
-}
-
-
     
 /* For larger screens */
 @media screen and (min-width: 769px) {
