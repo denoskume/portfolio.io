@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 0;
     padding: 0;
     background: white;
@@ -27,7 +27,7 @@ body {
     color: white;
     padding: 10px 0;
     text-align: center;
-    z-index: 1002; /* Higher z-index to stay on top of the banner */
+    z-index: 1000; /* Higher z-index to stay on top of the banner */
 }
 
 nav {
