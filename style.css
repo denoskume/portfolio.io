@@ -26,8 +26,8 @@ body {
 
 nav {
     margin-top: -110px;
-    background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
-   
+
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
