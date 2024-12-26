@@ -8,23 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const bottomNav = document.querySelector('.bottom-nav');
     let lastScrollTop = 0;
 
-    function applyStyles() {
-        if (window.innerWidth < 769) {
-            // Mobile styles
-            sidebar.style.height = '50%';
-        } else {
-            // Desktop styles
-            sidebar.style.height = '100%';
-        }
-    }
-
-    applyStyles();
-
-    window.addEventListener('resize', applyStyles);
-
     profilePhoto.addEventListener('click', function() {
-        sidebar.style.width = '55%';
-        document.body.classList.add('no-scroll'); // Restrict scrolling when sidebar is expanded
+        sidebar.style.width = '50%';
     });
 
     sidebar.addEventListener('click', function(event) {
@@ -34,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         if (!sidebar.contains(event.target) && !profilePhoto.contains(event.target)) {
             sidebar.style.width = '0';
-            document.body.classList.remove('no-scroll'); // Allow scrolling when sidebar is collapsed
         }
     });
 
