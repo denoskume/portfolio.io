@@ -21,9 +21,10 @@ body {
 }
 
 nav {
+    top: 50 px;
     background-color: rgba(248, 248, 248, 0.9); /* Transparent background */
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    /*border-bottom: 1px solid #ccc;*/
     display: none; /* Hide by default */
 }
 
@@ -236,7 +237,7 @@ ul li {
 
 .sidebar .side-nav-headline p {
     color: #818181;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .sidebar .company-info {
