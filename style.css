@@ -16,20 +16,10 @@ body {
 }
 
 .header {
-   /* top: 120px;
+    top: 120px;
     padding: 20px;
     text-align: center;
-    z-index: 1000; */
-
-    position: fixed; /* Position over the banner */
-    top: 90px; /* Adjust to align with the bottom of the banner */
-    left: 0;
-    width: 100%;
-    background: transparent; /* Ensure it's transparent to display over the banner */
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 1002; /* Higher z-index to stay on top of the banner */
+    z-index: 1000; 
 }
 
 nav {
@@ -89,9 +79,8 @@ ul li {
     width: 100%;
     height: 100px;
     overflow: hidden;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: rgba(106, 17, 203, 0.5); /* Transparent gradient background */
     z-index: 999;
-    
 }
 
 #banner-large img {
@@ -117,7 +106,6 @@ ul li {
     position: fixed;
     top: 50px;
     z-index: 1000; /* Ensure photo stays on top */
-
 }
 
 #certified-badge {
@@ -300,7 +288,6 @@ ul li {
     color: #f1f1f1;
 }
 
-    
 /* For larger screens */
 @media screen and (min-width: 769px) {
     #banner-large,
