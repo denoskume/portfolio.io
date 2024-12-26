@@ -100,7 +100,7 @@ ul li {
     border: 3px solid #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 50px;
+    top: 120px;
     z-index: 1000; /* Ensure photo stays on top */
 }
 
