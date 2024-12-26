@@ -16,11 +16,11 @@ body {
 }
 
 .header {
-    
+    top:80
     padding: 20px;
     text-align: center;
     background: transparent;
-    z-index: 1002; 
+    z-index: 1000; 
     
 }
 
@@ -75,6 +75,7 @@ ul li {
 
 /* Banner */
 #banner-large {
+    top: 0;
     display: none;
     position: relative;
     text-align: center;
