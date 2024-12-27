@@ -26,8 +26,8 @@ nav {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
-    z-index: -1; /* Ensure it stays behind the banner */
-    position: absolute; /* Position absolute to keep it behind the banner */
+    z-index: 1; /* Ensure it stays behind the banner */
+    position: fixed; /* Use fixed to keep it behind the banner */
     top: 0; /* Align it with the top */
 }
 
@@ -292,10 +292,10 @@ ul li {
     }
     nav {
         display: block; /* Show navigation on larger screens */
-        position: absolute; /* Position absolute to keep it behind the banner */
+        position: fixed; /* Use fixed to keep it behind the banner */
         top: 0; /* Align it with the top */
         background: rgba(255, 255, 255, 0.8); /* Apply transparency */
-        z-index: -1; /* Ensure it stays behind the banner */
+        z-index: 1; /* Ensure it stays behind the banner */
     }
     .top-navigation,
     .bottom-nav,
