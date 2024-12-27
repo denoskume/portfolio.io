@@ -27,12 +27,16 @@
         .experience {
             margin-bottom: 20px;
         }
-        .experience h3 {
-            margin-top: 0px;
-        }
         h2 {
             margin-top: 0px;
             margin-bottom: 20px;
+        }
+        .description {
+            display: none;
+        }
+        .see-more {
+            color: blue;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -46,7 +50,8 @@
                 <h3>Data Analyst (Internship)</h3>
                 <p>Unified Mentor</p>
                 <p>September 2024 - Present (4 months) | India (Remote)</p>
-                <p>Engaged in temporary employment as a Data Analyst Intern.</p>
+                <p class="description" id="desc1">Engaged in temporary employment as a Data Analyst Intern. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus, justo ut convallis convallis, augue diam sodales turpis, non suscipit purus est sed eros. Sed vitae purus non lectus tincidunt aliquet.</p>
+                <p class="see-more" onclick="toggleDescription('desc1')">See More</p>
             </section>
             <hr>
 
@@ -55,7 +60,8 @@
                 <h3>French Instructor (Full-time)</h3>
                 <p>New Baldwin Group of Institutions</p>
                 <p>May 2024 - Present (8 months) | Karnataka, India (Hybrid)</p>
-                <p>Provided instruction in French language and culture.</p>
+                <p class="description" id="desc2">Provided instruction in French language and culture. Vivamus nec orci at erat volutpat pulvinar. Duis ut aliquet lectus. In hac habitasse platea dictumst. Maecenas tempus fermentum orci ut sollicitudin. Curabitur luctus quam id quam tincidunt, a cursus nisi dictum.</p>
+                <p class="see-more" onclick="toggleDescription('desc2')">See More</p>
             </section>
             <hr>
 
@@ -64,7 +70,8 @@
                 <h3>Freelance Web Developer</h3>
                 <p>Freelancer.com</p>
                 <p>November 2022 - Present (2 years 2 months) | Remote</p>
-                <p>Developed and maintained websites for various clients.</p>
+                <p class="description" id="desc3">Developed and maintained websites for various clients. Praesent eget mi vitae lacus vestibulum suscipit. Aliquam erat volutpat. Nullam non bibendum ligula. Integer vehicula eros sed ante condimentum, in pharetra urna fringilla. Proin vel urna a sapien laoreet aliquet et nec sapien.</p>
+                <p class="see-more" onclick="toggleDescription('desc3')">See More</p>
             </section>
         </div>
         
@@ -72,5 +79,20 @@
             <p>Other content can go here.</p>
         </div>
     </div>
+
+    <script>
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            const seeMore = description.nextElementSibling;
+
+            if (description.style.display === "none") {
+                description.style.display = "block";
+                seeMore.innerHTML = "See Less";
+            } else {
+                description.style.display = "none";
+                seeMore.innerHTML = "See More";
+            }
+        }
+    </script>
 </body>
 </html>
