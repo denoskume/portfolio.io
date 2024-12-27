@@ -11,8 +11,8 @@
             padding: 20px;
             display: flex;
             justify-content: center;
-            background-color: #ede2e1; /* Dark Blue */
-            color: rgba(237, 226, 225); /* Lighter 90% */
+            background-color: #ede2e1; /* Light background */
+            color: rgba(237, 226, 225); /* Lighter text color */
         }
 
         .container { 
@@ -21,9 +21,8 @@
             display: flex; 
             gap: 20px; 
             padding: 20px; 
-           
         }
-       
+
         .experience-section {
             width: 60%;
             background-color: white; /* White background for experience section */ 
@@ -39,7 +38,7 @@
             border-radius: 5px; /* Rounded corners */
             object-fit: cover; /* Ensures the image covers the area */
         }
-        
+
         .experience {
             margin-bottom: 20px;
         }
@@ -47,18 +46,21 @@
             margin: 0; /* Remove margins */
             text-align: justify; /* Justify the text */
         }
+        .experience h3 + p, .experience p + p {
+            margin-top: 5px; /* Small margin at the top for spacing */
+        }
         h2 {
             margin-top: 0px;
             margin-bottom: 20px;
         }
         .description-line {
             display: flex;
-            text-align: justify;
             justify-content: space-between;
             align-items: center;
         }
         .description-full {
             display: none;
+            text-align: justify; /* Justify the description */
         }
         .see-more {
             color: black; /* Default color */
@@ -88,7 +90,7 @@
                 <h3>Data Analyst (Internship)</h3>
                 <p>Unified Mentor</p>
                 <p>September 2024 - Present (4 months) | India (Remote)</p>
-                <div class="description-line"> <br> <br>
+                <div class="description-line"> 
                     <p>Engaged in temporary employment as a Data Analyst.</p>
                     <p class="see-more" onclick="toggleDescription('desc1')">...see more</p>
                 </div>
