@@ -109,17 +109,6 @@ ul li {
     z-index: 1000; /* Ensure photo stays on top */
 }
 
-#certified-badge {
-    width: 35px;
-    height: 25px;
-    /*bottom: 50px; /* Adjust based on your design */
-   /* right: 5px; /* Adjust based on your design */
-    border-radius: 30%;
-    margin-top: 80px;
-    margin-left: 88px;
-    z-index: 1001; /* Ensure badge stays on top */
-}
-
 /* Profile Photo for Mobile View */
 .profile-photo {
     display: none;
