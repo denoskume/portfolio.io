@@ -27,7 +27,9 @@ nav {
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
     z-index: 998; 
-    
+    position: fixed; /* Make navigation fixed */
+    top: 0; /* Position at the top */
+    width: 100%; /* Full width */
 }
 
 nav .navbar-nav {
@@ -75,13 +77,14 @@ ul li {
 /* Banner */
 #banner-large {
     display: none;
-    position: relative;
+    position: fixed; /* Make banner fixed */
     text-align: center;
     background: transparent;
     width: 100%;
     height: 120px;
     overflow: hidden;
-    z-index: 999;   
+    z-index: 999;  
+    top: 0; /* Position at the top */
 }
 
 #banner-large img {
@@ -89,7 +92,6 @@ ul li {
     height: 100%;
     object-fit: cover;
 }
-
 
 /* Profile Photo for Mobile View */
 .profile-photo {
@@ -252,6 +254,7 @@ ul li {
 #main {
     transition: margin-left 0.5s;
     padding: 16px;
+    margin-top: 160px; /* Space for fixed banner and nav */
 }
 
 /* For larger screens */
@@ -262,8 +265,6 @@ ul li {
     }
     nav {
         display: block; /* Show navigation on larger screens */
-        position: relative; /* Position relative to place it below the banner */
-        top: 10px; /* Adjust as needed */
     }
     .top-navigation,
     .bottom-nav,
