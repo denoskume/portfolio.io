@@ -11,21 +11,22 @@
             padding: 20px;
             display: flex;
             justify-content: center;
-            background-color: #ede2e1; 
-            color: rgba(237, 226, 225); 
+            background-color: #ede2e1; /* Dark Blue */
+            color: rgba(237, 226, 225); /* Lighter 90% */
         }
         .container {
             max-width: 75%;
             width: 100%;
             display: flex;
             gap: 20px;
+            border: 1px solid #ccc;
             padding: 20px;
-            
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .experience-section {
             width: 60%;
-            background-color: white; 
-            color: black; 
+            background-color: white; /* White background for experience section */ 
+            color: black; /* Text color for better contrast */ 
             padding: 20px;
             border-radius: 10px;
         }
@@ -42,6 +43,10 @@
         }
         .experience {
             margin-bottom: 20px;
+        }
+        .experience h3, .experience p {
+            margin: 0; /* Remove margins */
+            text-align: justify; /* Justify the text */
         }
         h2 {
             margin-top: 0px;
