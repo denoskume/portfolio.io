@@ -27,11 +27,11 @@ nav {
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
     z-index: 998; 
-    margin-left: 60px
+    margin-left: 85px
 }
 
 nav .navbar-nav {
-    margin-left: 60px;
+    margin-left: auto;
 }
 
 nav .navbar-nav .nav-link {
