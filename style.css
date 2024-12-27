@@ -11,16 +11,13 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 5px;
-    padding: 5px;
+    margin: 5px 0;
+    padding: 0;
 }
 
 .header {
     padding: 20px;
-    text-align: center;
-    
-    
-    
+    text-align: center;    
 }
 
 nav {
