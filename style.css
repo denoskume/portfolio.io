@@ -78,7 +78,7 @@ ul li {
     display: none;
     position: relative;
     text-align: center;
-    background: rgba(255, 255, 255, 0.5); /* Make banner partially transparent */
+    background: rgba(255, 255, 255, 0.1); /* Make banner as transparent as possible */
     width: 100%;
     height: 120px;
     overflow: hidden;
@@ -288,7 +288,7 @@ ul li {
     #banner-large,
     #profile-area {
         display: block;
-        background: rgba(255, 255, 255, 0.5); /* Make banner partially transparent */
+        background: rgba(255, 255, 255, 0.1); /* Make banner as transparent as possible */
     }
     nav {
         display: block; /* Show navigation on larger screens */
