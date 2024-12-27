@@ -23,10 +23,15 @@ body {
 
 nav {
     margin-top: -60px;
-    background: transparent;
+    /*background: transparent; */
+    background-image: url('your-image-url.jpg');
+    background-position: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
     z-index: 998; 
 }
 
@@ -84,16 +89,6 @@ ul li {
     overflow: hidden;
     z-index: 999; */
 
-    display: none;
-    position: relative;
-    text-align: center;
-    background-image: url('your-image-url.jpg'); /* Add your image URL here */
-    background-size: cover; /* Ensure the image covers the entire header */
-    background-position: center; /* Center the image */
-    width: 100%;
-    height: 120px;
-    overflow: hidden;
-    z-index: 999;
 }
 
     
