@@ -111,9 +111,9 @@ ul li {
 
 #certified-badge {
     position: relative;
-    width: 35px;
-    height: 25px;
-    border-radius: 30%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
     margin-top: 80px;
     margin-left: 88px;
     z-index: 1001; /* Ensure badge stays on top */
