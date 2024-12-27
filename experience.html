@@ -11,23 +11,31 @@
             padding: 20px;
             display: flex;
             justify-content: center;
-            background-color: #ede2e1; /* Dark Blue */
-            color: rgba(237, 226, 225); /* Lighter 90% */
+            background-color: #ede2e1; 
+            color: rgba(237, 226, 225); 
         }
         .container {
             max-width: 75%;
             width: 100%;
             display: flex;
             gap: 20px;
-            border: 1px solid #ccc;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
         }
         .experience-section {
             width: 60%;
-            background-color: white; /* White background for experience section */ 
-            color: black; /* Text color for better contrast */ 
-            padding: 20px; border-radius: 10px;
+            background-color: white; 
+            color: black; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .company-logo {
+            float: left;
+            margin-right: 10px;
+            width: 50px; /* Fixed width */
+            height: 50px; /* Fixed height */
+            border-radius: 5px; /* Rounded corners */
+            object-fit: cover; /* Ensures the image covers the area */
         }
         .other-content {
             width: 40%;
@@ -54,6 +62,13 @@
         .see-more:hover {
             color: blue; /* Color on hover */
         }
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: blue;
+        }
     </style>
 </head>
 <body>
@@ -64,7 +79,7 @@
             <h2>Experience</h2>
             
             <section class="experience">
-                <img src="Verified.png" alt="Company Logo" style="float: left; margin-right: 10px;">
+                <img src="Verified.png" alt="Company Logo" class="company-logo">
                 <h3>Data Analyst (Internship)</h3>
                 <p>Unified Mentor</p>
                 <p>September 2024 - Present (4 months) | India (Remote)</p>
@@ -77,7 +92,7 @@
             <hr>
 
             <section class="experience">
-                <img src="Verified.png" alt="Company Logo" style="float: left; margin-right: 10px;">
+                <img src="Verified.png" alt="Company Logo" class="company-logo">
                 <h3>French Instructor (Full-time)</h3>
                 <p>New Baldwin Group of Institutions</p>
                 <p>May 2024 - Present (8 months) | Karnataka, India (Hybrid)</p>
@@ -90,7 +105,7 @@
             <hr>
 
             <section class="experience">
-                <img src="Verified.png" alt="Company Logo" style="float: left; margin-right: 10px;">
+                <img src="Verified.png" alt="Company Logo" class="company-logo">
                 <h3>Freelance Web Developer</h3>
                 <p>Freelancer.com</p>
                 <p>November 2022 - Present (2 years 2 months) | Remote</p>
@@ -123,4 +138,3 @@
     </script>
 </body>
 </html>
-
