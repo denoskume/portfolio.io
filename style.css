@@ -21,13 +21,14 @@ body {
 }
 
 nav {
-    margin-top: 0; /* Reset margin */
-    background: transparent; /* Make nav transparent */
+    margin-top: -110px;
+    background: rgba(255, 255, 255, 0.8); /* Apply transparency */
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    position: relative; /* Ensure it is positioned below the banner */
-    z-index: 1; /* Lower z-index to show through the banner */
     display: none; /* Hide by default */
+    z-index: -1; /* Ensure it stays behind the banner */
+    position: absolute; /* Position absolute to keep it behind the banner */
+    top: 0; /* Align it with the top */
 }
 
 nav .navbar-nav {
@@ -81,7 +82,7 @@ ul li {
     width: 100%;
     height: 120px;
     overflow: hidden;
-    z-index: 2; /* Higher z-index to appear above nav */
+    z-index: 2; /* Ensure it stays above the nav */
 }
 
 #banner-large img {
@@ -106,7 +107,7 @@ ul li {
     border: 3px solid #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     top: 120px;
-    z-index: 3; /* Ensure photo stays on top */
+    z-index: 1000; /* Ensure photo stays on top */
 }
 
 #certified-badge {
@@ -116,7 +117,7 @@ ul li {
     border-radius: 30%;
     margin-top: 80px;
     margin-left: 88px;
-    z-index: 4; /* Ensure badge stays on top */
+    z-index: 1001; /* Ensure badge stays on top */
 }
 
 /* Profile Photo for Mobile View */
@@ -290,8 +291,10 @@ ul li {
     }
     nav {
         display: block; /* Show navigation on larger screens */
-        position: relative; /* Position relative to place it below the banner */
-        top: 10px; /* Adjust as needed */
+        position: absolute; /* Position absolute to keep it behind the banner */
+        top: 0; /* Align it with the top */
+        background: rgba(255, 255, 255, 0.8); /* Apply transparency */
+        z-index: -1; /* Ensure it stays behind the banner */
     }
     .top-navigation,
     .bottom-nav,
