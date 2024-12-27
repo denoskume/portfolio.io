@@ -27,7 +27,7 @@ nav {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
-    z-index: 1000; 
+    z-index: 999; 
     position: fixed; /* Make navigation fixed */
     top: 0; /* Position at the top */
     width: 100%; /* Full width */
@@ -35,7 +35,7 @@ nav {
 
 nav .navbar-nav {
     margin-left: auto;
-    position: fixed;
+    
 }
 
 nav .navbar-nav .nav-link {
