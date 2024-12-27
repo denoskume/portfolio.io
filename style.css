@@ -74,7 +74,7 @@ ul li {
 
 /* Banner */
 #banner-large {
-    
+    /*
     display: none;
     position: relative;
     text-align: center;
@@ -82,7 +82,20 @@ ul li {
     width: 100%;
     height: 120px;
     overflow: hidden;
+    z-index: 999; */
+
+    display: none;
+    position: relative;
+    text-align: center;
+    background-image: url('your-image-url.jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the image */
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
     z-index: 999;
+}
+
     
    
 }
