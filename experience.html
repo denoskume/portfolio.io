@@ -22,7 +22,6 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
-            margin-top: 60px; /* To ensure content does not overlap with the back link */
         }
         .logo {
             width: 50px;
@@ -47,13 +46,18 @@
         .description {
             margin-top: 10px;
         }
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
 
     <a href="javascript:history.back()" class="back-link">&larr; Back</a>
 
-    <div class="experience">
+    <section class="experience">
         <img src="company-logo.png" alt="Company Logo" class="logo">
         <div class="details">
             <div class="position">Data Analyst (Internship)</div>
@@ -63,9 +67,11 @@
                 Engaged in temporary employment as a Data Analyst Intern.
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="experience">
+    <hr>
+
+    <section class="experience">
         <img src="company-logo.png" alt="Company Logo" class="logo">
         <div class="details">
             <div class="position">French Instructor (Full-time)</div>
@@ -75,9 +81,11 @@
                 Provided instruction in French language and culture.
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="experience">
+    <hr>
+
+    <section class="experience">
         <img src="company-logo.png" alt="Company Logo" class="logo">
         <div class="details">
             <div class="position">Freelance Web Developer</div>
@@ -87,7 +95,7 @@
                 Developed and maintained websites for various clients.
             </div>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>
