@@ -9,93 +9,68 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
         }
-        .back-link {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 1em;
-            text-decoration: none;
-            color: blue;
+        .container {
+            max-width: 75%;
+            width: 100%;
+            display: flex;
+            gap: 20px;
+        }
+        .experience-section {
+            width: 60%;
+        }
+        .other-content {
+            width: 40%;
         }
         .experience {
-            display: flex;
-            align-items: center;
             margin-bottom: 20px;
         }
-        .logo {
-            width: 50px;
-            height: 50px;
-            margin-right: 20px;
+        .experience h3 {
+            margin-top: 0px;
         }
-        .details {
-            flex-grow: 1;
-        }
-        .position {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        .company {
-            font-size: 1em;
-            color: gray;
-        }
-        .dates-location {
-            font-size: 0.9em;
-            color: gray;
-        }
-        .description {
-            margin-top: 10px;
-        }
-        hr {
-            margin: 40px 0;
-            border: none;
-            border-top: 1px solid #ccc;
+        h2 {
+            margin-top: 0px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="experience-section">
+            <h2>Experience</h2>
+            
+            <section class="experience">
+                <img src="company-logo1.png" alt="Company Logo" style="float: left; margin-right: 10px;">
+                <h3>Data Analyst (Internship)</h3>
+                <p>Unified Mentor</p>
+                <p>September 2024 - Present (4 months) | India (Remote)</p>
+                <p>Engaged in temporary employment as a Data Analyst Intern.</p>
+            </section>
+            <hr>
 
-    <a href="javascript:history.back()" class="back-link">&larr; Back</a>
+            <section class="experience">
+                <img src="company-logo2.png" alt="Company Logo" style="float: left; margin-right: 10px;">
+                <h3>French Instructor (Full-time)</h3>
+                <p>New Baldwin Group of Institutions</p>
+                <p>May 2024 - Present (8 months) | Karnataka, India (Hybrid)</p>
+                <p>Provided instruction in French language and culture.</p>
+            </section>
+            <hr>
 
-    <section class="experience">
-        <img src="company-logo.png" alt="Company Logo" class="logo">
-        <div class="details">
-            <div class="position">Data Analyst (Internship)</div>
-            <div class="company">Unified Mentor</div>
-            <div class="dates-location">September 2024 - Present (4 months) | India (Remote)</div>
-            <div class="description">
-                Engaged in temporary employment as a Data Analyst Intern.
-            </div>
+            <section class="experience">
+                <img src="company-logo3.png" alt="Company Logo" style="float: left; margin-right: 10px;">
+                <h3>Freelance Web Developer</h3>
+                <p>Freelancer.com</p>
+                <p>November 2022 - Present (2 years 2 months) | Remote</p>
+                <p>Developed and maintained websites for various clients.</p>
+            </section>
         </div>
-    </section>
-
-    <hr>
-
-    <section class="experience">
-        <img src="company-logo.png" alt="Company Logo" class="logo">
-        <div class="details">
-            <div class="position">French Instructor (Full-time)</div>
-            <div class="company">New Baldwin Group of Institutions</div>
-            <div class="dates-location">May 2024 - Present (8 months) | Karnataka, India (Hybrid)</div>
-            <div class="description">
-                Provided instruction in French language and culture.
-            </div>
+        
+        <div class="other-content">
+            <p>Other content can go here.</p>
         </div>
-    </section>
-
-    <hr>
-
-    <section class="experience">
-        <img src="company-logo.png" alt="Company Logo" class="logo">
-        <div class="details">
-            <div class="position">Freelance Web Developer</div>
-            <div class="company">Freelancer.com</div>
-            <div class="dates-location">November 2022 - Present (2 years 2 months) | Remote</div>
-            <div class="description">
-                Developed and maintained websites for various clients.
-            </div>
-        </div>
-    </section>
-
+    </div>
 </body>
 </html>
