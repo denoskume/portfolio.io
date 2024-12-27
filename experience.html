@@ -10,10 +10,19 @@
             margin: 0;
             padding: 20px;
         }
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1em;
+            text-decoration: none;
+            color: blue;
+        }
         .experience {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            margin-top: 60px; /* To ensure content does not overlap with the back link */
         }
         .logo {
             width: 50px;
@@ -41,6 +50,8 @@
     </style>
 </head>
 <body>
+
+    <a href="javascript:history.back()" class="back-link">&larr; Back</a>
 
     <div class="experience">
         <img src="company-logo.png" alt="Company Logo" class="logo">
