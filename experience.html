@@ -11,21 +11,20 @@
             padding: 20px;
             display: flex;
             justify-content: center;
-            background-color: #ede2e1; /* Dark Blue */
-            color: rgba(237, 226, 225); /* Lighter 90% */
+            background-color: #ede2e1; /* Light background */
+            color: rgba(237, 226, 225); /* Lighter text color */
         }
 
         .container { 
-            max-width: 95%; 
+            max-width: 85%; 
             width: 100%; 
             display: flex; 
             gap: 20px; 
             padding: 20px; 
-           
         }
-       
+
         .experience-section {
-            width: 80%;
+            width: 60%;
             background-color: white; /* White background for experience section */ 
             color: black; /* Text color for better contrast */ 
             padding: 20px;
@@ -39,7 +38,7 @@
             border-radius: 5px; /* Rounded corners */
             object-fit: cover; /* Ensures the image covers the area */
         }
-        
+
         .experience {
             margin-bottom: 20px;
         }
@@ -47,18 +46,22 @@
             margin: 0; /* Remove margins */
             text-align: justify; /* Justify the text */
         }
+        .experience h3 + p, .experience p + p {
+            margin-top: 5px; /* Small margin at the top for spacing */
+        }
         h2 {
             margin-top: 0px;
             margin-bottom: 20px;
         }
         .description-line {
             display: flex;
-            text-align: justify;
             justify-content: space-between;
             align-items: center;
+            text-align: justify; /* Justify the text */
         }
         .description-full {
             display: none;
+            text-align: justify; /* Justify the description */
         }
         .see-more {
             color: black; /* Default color */
