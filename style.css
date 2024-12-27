@@ -26,8 +26,8 @@ nav {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
-    z-index: 1; /* Ensure it stays behind the banner */
-    position: fixed; /* Use fixed to keep it behind the banner */
+    z-index: 3; /* Ensure it shows above the banner */
+    position: absolute; /* Position absolute to keep it behind the banner */
     top: 0; /* Align it with the top */
 }
 
@@ -82,7 +82,7 @@ ul li {
     width: 100%;
     height: 120px;
     overflow: hidden;
-    z-index: 2; /* Ensure it stays above the nav */
+    z-index: 2; /* Ensure it stays behind the nav */
 }
 
 #banner-large img {
@@ -292,10 +292,10 @@ ul li {
     }
     nav {
         display: block; /* Show navigation on larger screens */
-        position: fixed; /* Use fixed to keep it behind the banner */
+        position: absolute; /* Position absolute to keep it behind the banner */
         top: 0; /* Align it with the top */
         background: rgba(255, 255, 255, 0.8); /* Apply transparency */
-        z-index: 1; /* Ensure it stays behind the banner */
+        z-index: 3; /* Ensure it shows above the banner */
     }
     .top-navigation,
     .bottom-nav,
