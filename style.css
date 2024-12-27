@@ -27,6 +27,7 @@ nav {
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
     z-index: 998; 
+    margin-left: 60px
 }
 
 nav .navbar-nav {
