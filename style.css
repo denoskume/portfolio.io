@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin-top: -10px;
@@ -23,15 +22,10 @@ body {
 
 nav {
     margin-top: -60px;
-    /*background: transparent; */
-    background-image: url('your-image-url.jpg');
-    background-position: center;
+    background: transparent; 
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none; /* Hide by default */
-    width: 100%;
-    height: 120px;
-    overflow: hidden;
     z-index: 998; 
 }
 
