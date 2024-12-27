@@ -18,7 +18,7 @@ body {
 .header {
     padding: 20px;
     text-align: center; 
-    position: fixed;
+    
 }
 
 nav {
@@ -35,6 +35,7 @@ nav {
 
 nav .navbar-nav {
     margin-left: auto;
+    position: fixed;
 }
 
 nav .navbar-nav .nav-link {
