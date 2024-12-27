@@ -110,10 +110,11 @@ ul li {
 }
 
 #certified-badge {
-    position: relative;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    width: 35px;
+    height: 25px;
+    /*bottom: 50px; /* Adjust based on your design */
+   /* right: 5px; /* Adjust based on your design */
+    border-radius: 30%;
     margin-top: 80px;
     margin-left: 88px;
     z-index: 1001; /* Ensure badge stays on top */
