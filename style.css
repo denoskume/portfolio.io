@@ -265,6 +265,7 @@ ul li {
     }
     nav {
         display: block; /* Show navigation on larger screens */
+        position: fixed;
     }
     .top-navigation,
     .bottom-nav,
