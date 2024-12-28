@@ -79,8 +79,12 @@
             text-decoration: none;
             color: blue;
             font-size: 34px;
+            display: none;
         }
 
+        .back-link.show {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -222,6 +226,21 @@
                 seeMore.innerHTML = "...see more";
             }
         }
+
+        document.addEventListener('mousemove', (e) => {
+            const backLink = document.getElementById('back-link');
+            const rect = backLink.getBoundingClientRect();
+            const distance = 100; // distance to trigger the hover effect
+
+            if (e.clientX >= rect.left - distance && e.clientX <= rect.right + distance &&
+                e.clientY >= rect.top - distance && e.clientY <= rect.bottom + distance) {
+                backLink.classList.add('show');
+                backLink.innerHTML = "&larr; Back";
+            } else {
+                backLink.classList.remove('show');
+                backLink.innerHTML = "&larr; Back";
+            }
+        });
     </script>
 </body>
 </html>
