@@ -75,12 +75,10 @@
             position: absolute;
             top: 2px;
             left: 3px;
-            bottom: 25px;
-            text-decoration: none;
-            color: blue;
-            font-size: 34px;
-            display: none;
-           
+            bottom: 40px;
+            text-decoration: bold;
+            color: black;
+            font-size: 25px;  
         }
 
         .back-link.show {
@@ -89,9 +87,7 @@
     </style>
 </head>
 <body>
-     <a href="javascript:history.back()" class="back-link" id="back-link">&larr; Back</a>
-
-    
+         <a href="javascript:history.back()" class="back-link">&larr;Back</a>
     <div class="container">
         <div class="experience-section">
             <h2>Experience</h2>
@@ -229,20 +225,6 @@
             }
         }
 
-        ocument.addEventListener('mousemove', (e) => {
-            const backLink = document.getElementById('back-link');
-            const rect = backLink.getBoundingClientRect();
-            const distance = 100; // distance to trigger the hover effect
-
-            if (e.clientX >= rect.left - distance && e.clientX <= rect.right + distance &&
-                e.clientY >= rect.top - distance && e.clientY <= rect.bottom + distance) {
-                backLink.classList.add('show');
-                backLink.innerHTML = "&larr; Back";
-            } else {
-                backLink.classList.remove('show');
-                backLink.innerHTML = "&larr; Back";
-            }
-        });
     </script>
 </body>
 </html>
